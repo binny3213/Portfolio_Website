@@ -1,6 +1,6 @@
 # Portfolio-Website
 Build a Updated Protfolio Website, using Javascript, Css ,Bootstrap, Html,  and Saas.<br>
-
+You can check my CV out in this Website as well.
 
 ### :hammer_and_wrench: Languages and Tools :
 <div>
@@ -11,7 +11,7 @@ Build a Updated Protfolio Website, using Javascript, Css ,Bootstrap, Html,  and 
   <img src="https://github.com/devicons/devicon/blob/master/icons/sass/sass-original.svg"  title="sass" alt="sass" width="40" height="40"/>&nbsp;
 </div>
 
-### check my CV out in this Website
+
 
 ![image](https://github.com/user-attachments/assets/20fae8ca-44f6-4057-85e9-822e35064b67)
 
