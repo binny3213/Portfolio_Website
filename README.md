@@ -11,6 +11,18 @@ You can check my CV out in this Website as well.
   <img src="https://github.com/devicons/devicon/blob/master/icons/sass/sass-original.svg"  title="sass" alt="sass" width="40" height="40"/>&nbsp;
 </div>
 
+### Features: 🎨
+
+- Fully Responsive Design – Optimized for all devices.
+
+- Modern UI/UX – Sleek and interactive user interface.
+
+- Projects Showcase – Displaying my work and achievements.
+
+- Smooth Animations – Enhancing the browsing experience.
+
+- Contact Form – Easily reach out for collaborations or inquiries.
+
 ---
 
 ![image](https://github.com/user-attachments/assets/20fae8ca-44f6-4057-85e9-822e35064b67)
