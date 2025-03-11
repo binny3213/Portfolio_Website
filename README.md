@@ -30,6 +30,7 @@ This portfolio serves as a central hub showcasing my skills, projects, and profe
 
 ---
 
-![image](https://github.com/user-attachments/assets/20fae8ca-44f6-4057-85e9-822e35064b67)
+![image](https://github.com/user-attachments/assets/c19aa926-0acf-4f70-8b73-730c2c611732)
+
 
 
