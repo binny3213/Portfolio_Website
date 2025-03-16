@@ -22,6 +22,44 @@
   --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
 }
 
+// icons flow
+.skills-marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #f8f9fa; /* רקע בהיר, אפשר לשנות */
+}
+
+.marquee {
+    display: flex;
+    width: 100%;
+}
+
+.marquee-content {
+    display: flex;
+    gap: 40px; /* ריווח בין האייקונים */
+    animation: marquee 10s linear infinite; /* זמן תנועה והתחדשות */
+}
+
+.marquee-content img {
+    width: 60px; /* גודל האייקונים */
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.marquee-content img:hover {
+    transform: scale(1.2); /* הגדלה בריחוף */
+}
+
+/* אנימציה לגלילה מימין לשמאל */
+@keyframes marquee {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
+
+// languages skills
 .animated-icon {
     font-size: 35px;
     margin-left: 8px;
