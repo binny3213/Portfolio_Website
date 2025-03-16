@@ -62,7 +62,7 @@
     }
 
     .marquee-content {
-        animation: marquee 10s linear infinite; 
+        animation: marquee 8s linear infinite; 
     }
 }
 
