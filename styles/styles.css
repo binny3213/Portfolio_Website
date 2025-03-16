@@ -22,26 +22,6 @@
   --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
 }
 
-.animated-icon {
-    display: inline-block !important;
-    font-size: 24px !important;
-    color: inherit !important;
-}
-
-@keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-5px); }
-}
-
-.animated-icon:hover {
-    animation: rotate 0.6s ease-in-out;
-}
-
-@keyframes rotate {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
 .light-mode {
   --color-primary: #FFFFFF;
   --color-secondary: #00D9FF;
