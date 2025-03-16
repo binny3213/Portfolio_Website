@@ -394,22 +394,28 @@ section {
   width: 60%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .c {
-  width: 95%;
+  width: 100%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .csharp {
-  width: 95%;
+  width: 100%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .python {
-  width: 95%;
+  width: 100%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .javascript {
-  width: 90%;
+  width: 95%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .mysql {
-  width: 90%;
+  width: 100%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .java {
-  width: 85%;
+  width: 90%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .cplusplus {
+  width: 95%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .kotlin{
+  width: 100%;
 }
 
 .stat-title {
