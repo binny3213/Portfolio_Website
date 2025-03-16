@@ -23,6 +23,7 @@
 }
 
 .animated-icon {
+    font-size: 40px;
     display: inline-block;
     animation: bounce 2s infinite;
 }
