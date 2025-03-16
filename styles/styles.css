@@ -27,42 +27,47 @@
     overflow: hidden;
     white-space: nowrap;
     position: relative;
-    margin-bottom: 20px;
     width: 100%;
     padding: 20px 0;
-    background-color: transparent; 
+    background-color: transparent;
+}
+
+.marquee {
+    display: flex;
+    width: 100%;
 }
 
 .marquee-content {
     display: flex;
-    gap: 40px; 
-    animation: marquee 10s linear infinite; 
+    gap: 40px; /* ריווח בין האייקונים */
+    animation: marquee 6s linear infinite; /* מהירות גבוהה יותר */
+    min-width: 200%;
 }
 
 .marquee-content img {
-    width: 60px; 
+    width: 60px; /* גודל האייקונים */
     height: auto;
     transition: transform 0.3s ease-in-out;
 }
 
 .marquee-content img:hover {
-    transform: scale(1.2); 
+    transform: scale(1.2);
 }
 
-
+/* אנימציה לגלילה מהירה */
 @keyframes marquee {
     from { transform: translateX(0%); }
-    to { transform: translateX(-50%); } 
+    to { transform: translateX(-50%); } /* גלילה של חצי מרוחב התוכן */
 }
 
-
+/* התאמה לטלפונים */
 @media screen and (max-width: 768px) {
     .marquee-content img {
-        width: 40px; 
+        width: 40px; /* הקטנת האייקונים במסכים קטנים */
     }
 
     .marquee-content {
-        animation: marquee 8s linear infinite; 
+        animation: marquee 8s linear infinite; /* מהירות גבוהה יותר בטלפונים */
     }
 }
 
