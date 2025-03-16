@@ -51,8 +51,19 @@
 
 
 @keyframes marquee {
-    from { transform: translateX(100%); }
-    to { transform: translateX(-100%); }
+    from { transform: translateX(0%); }
+    to { transform: translateX(-50%); } 
+}
+
+
+@media screen and (max-width: 768px) {
+    .marquee-content img {
+        width: 40px; 
+    }
+
+    .marquee-content {
+        animation: marquee 20s linear infinite; 
+    }
 }
 
 /* Languages skillset */
