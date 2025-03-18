@@ -54,40 +54,33 @@
     transform: scale(1.2);
 }
 
-* יצירת אנימציה לגלילה אינסופית */
+
 @keyframes marquee {
     from { transform: translateX(0); }
-    to { transform: translateX(-50%); } /* חצי מהתוכן כדי לשמור על המשכיות */
+    to { transform: translateX(-100%); } 
 }
 
-/* עיצוב האלמנט המכיל את האייקונים */
+
 .marquee-container {
     width: 100%;
     overflow: hidden;
     white-space: nowrap;
     position: relative;
+    display: flex;
 }
 
-/* יצירת גלילה רציפה עם שכפול */
+
 .marquee-content {
-    display: inline-block;
-    white-space: nowrap;
+    display: flex;
+    gap: 20px; 
     animation: marquee 10s linear infinite;
 }
 
-/* שכפול של התוכן */
-.marquee-content::after {
-    content: attr(data-text); /* משכפל את התוכן אוטומטית */
-    display: inline-block;
-    white-space: nowrap;
-    margin-left: 10px; /* רווח בין שני המחזורים */
-}
 
-/* התאמה לטלפונים */
-@media screen and (max-width: 768px) {
-    .marquee-content {
-        animation-duration: 8s; /* מהירות גבוהה יותר במסכים קטנים */
-    }
+.marquee-content::after {
+    content: attr(data-text); 
+    display: flex;
+    gap: 20px; 
 }
 
 .light-mode {
