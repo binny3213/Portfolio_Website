@@ -58,7 +58,7 @@
 
 @keyframes marquee {
     from { transform: translateX(0); }
-    to { transform: translateX(-50%); } 
+    to { transform: translateX(-100%); } 
 }
 
 
@@ -75,22 +75,47 @@
     display: flex;
     gap: 20px;
     animation: marquee 10s linear infinite;
-    min-width: 200%; 
 }
 
 
-.marquee-content span {
+.marquee-content::after {
+    content: attr(data-text); 
     display: flex;
     gap: 20px;
 }
 
 
 @media screen and (max-width: 768px) {
-    .marquee-content {
-        animation-duration: 8s; 
+    .marquee-content img {
+        width: 40px; 
     }
+
+    .marquee-content {
+        animation: marquee 8s linear infinite; 
 }
 
+.animated-icon {
+    font-size: 30px;
+    margin-left: 8px;
+    display: inline-block;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+
+.animated-icon:hover {
+    animation: rotate 0.6s ease-in-out;
+}
+
+
+@keyframes rotate {
+    0% { transform: rotate(0); }
+    100% { transform: rotate(360deg); }
+}
 
 
 .light-mode {
