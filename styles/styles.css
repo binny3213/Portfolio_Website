@@ -53,6 +53,72 @@
 .marquee-content img:hover {
     transform: scale(1.2);
 }
+/* skills animation */
+
+/* אנימציה לגלילה רציפה */
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); } /* הזזת התוכן כולו כדי שהגלילה תהיה אינסופית */
+}
+
+/* קונטיינר לגלילה אינסופית */
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    display: flex;
+}
+
+/* תוכן הגלילה */
+.marquee-content {
+    display: flex;
+    gap: 20px; /* רווח בין האייקונים */
+    animation: marquee 10s linear infinite;
+}
+
+/* שכפול אוטומטי של התוכן כדי שהגלילה לא תעצור */
+.marquee-content::after {
+    content: attr(data-text); /* שכפול התוכן */
+    display: flex;
+    gap: 20px;
+}
+
+/* התאמה למסכים קטנים */
+@media screen and (max-width: 768px) {
+    .marquee-content img {
+        width: 40px; /* הקטנת האייקונים במסכים קטנים */
+    }
+
+    .marquee-content {
+        animation: marquee 8s linear infinite; /* מהירות גבוהה יותר במסכים קטנים */
+    }
+}
+
+/* אנימציה לאייקונים קופצים */
+.animated-icon {
+    font-size: 30px;
+    margin-left: 8px;
+    display: inline-block;
+    animation: bounce 2s infinite;
+}
+
+/* אנימציה של קפיצה */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+/* אנימציה בעת מעבר עם העכבר */
+.animated-icon:hover {
+    animation: rotate 0.6s ease-in-out;
+}
+
+/* אנימציה של סיבוב */
+@keyframes rotate {
+    0% { transform: rotate(0); }
+    100% { transform: rotate(360deg); }
+}
 
 
 .light-mode {
