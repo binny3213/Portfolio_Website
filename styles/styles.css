@@ -54,34 +54,44 @@
     transform: scale(1.2);
 }
 
-
+/* אנימציה לגלילה מהירה */
 @keyframes marquee {
-    from { transform: translateX(0); }
-    to { transform: translateX(-100%); } 
+    from { transform: translateX(0%); }
+    to { transform: translateX(-50%); } /* גלילה של חצי מרוחב התוכן */
 }
 
+/* התאמה לטלפונים */
+@media screen and (max-width: 768px) {
+    .marquee-content img {
+        width: 40px; /* הקטנת האייקונים במסכים קטנים */
+    }
 
-.marquee-container {
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
-    display: flex;
+    .marquee-content {
+        animation: marquee 8s linear infinite; /* מהירות גבוהה יותר בטלפונים */
+    }
 }
 
-
-.marquee-content {
-    display: flex;
-    gap: 20px; 
-    animation: marquee 10s linear infinite;
+/* Languages skillset */
+.animated-icon {
+    font-size: 30px;
+    margin-left: 8px;
+    display: inline-block;
+    animation: bounce 2s infinite;
 }
 
-
-.marquee-content::after {
-    content: attr(data-text); 
-    display: flex;
-    gap: 20px; 
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
 }
+
+.animated-icon:hover {
+    animation: rotate 0.6s ease-in-out;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+{
 
 .light-mode {
   --color-primary: #FFFFFF;
