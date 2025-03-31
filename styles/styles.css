@@ -120,6 +120,15 @@
     100% { transform: rotate(360deg); }
 }
 
+.tech-icon img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
 
 
 .light-mode {
