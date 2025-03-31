@@ -463,6 +463,20 @@ section {
   width: 100%;
 }
 
+.project-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.project-title span {
+  font-weight: 400;
+  opacity: 0.8;
+  margin-left: 4px;
+}
+
 .stat-title {
   text-transform: uppercase;
   font-size: 1.4rem;
