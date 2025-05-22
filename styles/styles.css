@@ -655,6 +655,14 @@ section {
   align-items: center;
   font-size: 1.3rem;
 }
+
+.contact-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
 .contact-content-con .left-contact .contact-icon {
   display: flex;
   margin-top: 2rem;
