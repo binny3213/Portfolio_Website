@@ -621,6 +621,39 @@ section {
   transform: scale(1);
 }
 
+.social-icons-header {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.social-icons-header a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 0.4rem;
+  background-color: var(--color-grey-5);
+  color: var(--color-white);
+  transition: var(--transition-all);
+  cursor: pointer;
+}
+
+.social-icons-header a:hover {
+  background-color: var(--color-secondary);
+}
+
+.social-icons-header a:hover i {
+  color: var(--color-primary);
+}
+
+.social-icons-header a i {
+  font-size: 1.3rem;
+}
+
+
 .contact-content-con {
   display: flex;
   padding-top: 3.5rem;
