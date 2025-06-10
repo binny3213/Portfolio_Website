@@ -51,6 +51,15 @@ function PageTransitions(){
         element.classList.toggle('light-mode');
       })
 
+    // Set progress bar widths based on percentage text
+    document.querySelectorAll('.progress-con').forEach(con => {
+        const percentText = con.querySelector('.prog-text')?.innerText?.trim();
+        const progressBar = con.querySelector('.progress span');
+        if (percentText && progressBar) {
+            progressBar.style.width = percentText;
+        }
+    });
+
         
 }
 
