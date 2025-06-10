@@ -434,7 +434,7 @@ section {
   height: 100%;
   background-color: var(--color-secondary);
   transition: var(--transition-all);
-  width: 100%;
+  width: 60%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .c {
   width: 100%;
