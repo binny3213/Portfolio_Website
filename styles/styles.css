@@ -446,16 +446,16 @@ section {
   width: 100%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .javascript {
-  width: 95%;
+  width: 100%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .mysql {
   width: 100%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .java {
-  width: 90%;
+  width: 1000%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .cplusplus {
-  width: 95%;
+  width: 100%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .kotlin{
   width: 100%;
