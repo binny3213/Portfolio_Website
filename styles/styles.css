@@ -174,46 +174,24 @@ header {
 }
 
 section {
-  height: 100vh;
-  scroll-snap-align: start;
   min-height: 100vh;
   width: 100%;
-  position: absolute;
   left: 0;
   top: 0;
   padding: 3rem 18rem;
 }
 
 .section {
-  transform: translate(-100%) scale(0);
-  transition: var(--transition-all);
+  min-height: 100vh;
+  width: 100%;
+  scroll-snap-align: start;
   background-color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 18rem;
 }
 
-.sec1 {
-  display: none;
-  transform: translateY(0) scale(1);
-}
-
-.sec2 {
-  display: none;
-  transform: translateY(0) scale(1);
-}
-
-.sec3 {
-  display: none;
-  transform: translateY(0) scale(1);
-}
-
-.sec4 {
-  display: none;
-  transform: translateY(0) scale(1);
-}
-
-.sec5 {
-  display: none;
-  transform: translateY(0) scale(1);
-}
 
 .active {
   display: block;
