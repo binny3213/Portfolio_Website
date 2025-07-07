@@ -176,8 +176,6 @@ header {
 section {
   min-height: 100vh;
   width: 100%;
-  left: 0;
-  top: 0;
   padding: 3rem 18rem;
 }
 
@@ -191,7 +189,25 @@ section {
   align-items: center;
   padding: 3rem 18rem;
 }
+.sec1 {
 
+}
+
+.sec2 {
+
+}
+
+.sec3 {
+
+}
+
+.sec4 {
+
+}
+
+.sec5 {
+
+}
 
 .active {
   display: block;
