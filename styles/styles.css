@@ -1,5 +1,9 @@
 html {
+  height: 100%;
+  margin: 0;
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
 }
 
 * {
@@ -144,6 +148,11 @@ body {
   font-size: 1.1rem;
   color: var(--color-white);
   transition: var(--transition-all);
+  height: 100%;
+  margin: 0;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
 }
 
 a {
